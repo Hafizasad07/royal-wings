@@ -17,6 +17,7 @@ header {
     width: 100%;
     padding: 10px 0;
     text-align: center;
+    margin-top: -3px;
 }
 
 .picture img{
@@ -135,6 +136,8 @@ footer {
 .menu-toggle {
     display: none; /* Hide toggle button on larger screens */
 }
+
+
 @media screen and (max-width:767px) {
     .vacation-main{
         flex-wrap: wrap;
