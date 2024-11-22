@@ -7,8 +7,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: black;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
+    display: flex; 
+    flex-direction: column; 
 }
 
 header {
@@ -55,7 +55,7 @@ nav ul li .acitve {
     text-decoration: none;
 }
 main {
-    flex: 1; /* Allow main to grow and take available space */
+    flex: 1; 
     padding: 20px;
 }
 
@@ -72,7 +72,7 @@ main {
     font-style: italic;
 }
 footer {
-    background-color: #9900ff; /* Header and footer background */
+    background-color: #9900ff; 
     color: #000;
     text-align: center;
     font-size: 20px;
@@ -124,7 +124,7 @@ footer {
 }
 
 .location-column li {
-    padding: 15px 0; /* Space between items */
+    padding: 15px 0; 
 }
 
 .location-column{
@@ -134,9 +134,70 @@ footer {
 }
 
 .menu-toggle {
-    display: none; /* Hide toggle button on larger screens */
+    display: none; 
 }
 
+/* things pack styling  */
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.suitcase-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: end;
+    max-width: 400px;
+}
+
+.suitcase-image img {
+    width: 250px;
+    height: auto;
+}
+
+/* Table styles */
+.packing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.packing-table th,
+.packing-table td {
+    border: 1px solid #b1b1b1;
+    padding: 12px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.packing-table th {
+    color: #000;
+}
+
+.things-pack-img img{
+    width: 35%;
+    object-fit: cover;
+}
+
+.things-pack-img{
+    display: flex;
+}
+
+.bg-ff00fa{
+    background-color: #ff00fa;
+}
+
+.bg-f0d0db{
+    background-color: #f0d0db;
+}
 
 @media screen and (max-width:767px) {
     .vacation-main{
@@ -158,5 +219,13 @@ footer {
 
     nav{
         margin-top: -3px;
+    }
+
+    .main-content{
+        flex-direction: column;
+    }
+
+    .things-pack-img img{
+        width: 33%;
     }
 }
